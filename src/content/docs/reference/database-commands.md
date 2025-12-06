@@ -20,6 +20,8 @@ sidebar: { order: 1 }
 
 ### findAndModify
 
+### insert
+
 ### update
 
 ---
