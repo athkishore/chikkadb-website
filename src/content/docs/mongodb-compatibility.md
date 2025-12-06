@@ -17,16 +17,19 @@ See the [Database Commands](/reference/commands) reference page for more details
 ## BSON Data Compatibility
 ChikkaDB stores data in SQLite as text JSON, or in SQLite's internal JSONB format, so certain
 types in BSON cannot be represented natively. Given this limitation, ChikkaDB ensures that 
-unsupported BSON types are correctly handled by the storing the Extended JSON values.
+unsupported BSON types are correctly handled by storing the [Extended JSON representation](https://www.mongodb.com/docs/manual/reference/mongodb-extended-json/) of 
+those values.
 
 You can rest assured that your BSON data is accurately and losslessly stored in ChikkaDB.
 
 When it comes to operations, the long term goal is to ensure that all BSON types are handled correctly.
-At present, there is no special logic to handle BSON-specific types in expressions, so you should
-avoid delegating that task to ChikkaDB. This page will be updated when this situation changes.
+At present, there is no special logic to handle BSON-specific types in expressions and will be
+treated as JSON objects. So you should avoid delegating to ChikkaDB computations that involve
+BSON-specific types. This page will be updated when this situation changes.
 
-Operations on the original JSON types - number, string, boolean, null, object, array - don't have this issue and will
-work as expected.
+Operations on the original JSON types - number, string, boolean, null, object, array - 
+don't have this issue and will work as expected. They map well to SQLite's internal types - 
+integer, real, string, null, and json array and json object.
 
 See [Data Types](/reference/data-types) to understand the issues around types better.
 
