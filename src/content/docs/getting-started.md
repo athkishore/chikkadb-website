@@ -9,7 +9,7 @@ All you need is a machine with Node.js installed.
 
 Clone the ChikkaDB repository.
 ```shell
-git@github.com:athkishore/chikkadb-ts.git
+git clone git@github.com:athkishore/chikkadb-ts.git
 ```
 
 Change into the directory and install the dependencies.
