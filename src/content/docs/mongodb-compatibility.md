@@ -12,7 +12,7 @@ The goal is to have enough commands to cover most use cases, while ensuring that
 behave the same way as in MongoDB. Rather than completeness in compatibility, the goal is to
 recreate the same delightful experience in working with JSON data that MongoDB made possible.
 
-See the [Database Commands](/reference/commands) reference page for more details.
+See the [Database Commands](/reference/database-commands) reference page for more details.
 
 ## BSON Data Compatibility
 ChikkaDB stores data in SQLite as text JSON, or in SQLite's internal JSONB format, so certain
