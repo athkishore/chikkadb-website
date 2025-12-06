@@ -1,11 +1,34 @@
 ---
 title: Database Commands
 description: List of MongoDB database commands available in ChikkaDB
+sidebar: { order: 1 }
 ---
 
-Reference pages are ideal for outlining how things work in terse and clear terms.
-Less concerned with telling a story or addressing a specific use case, they should give a comprehensive outline of what you're documenting.
+## Aggregation Commands
 
-## Further reading
+### count
 
-- Read [about reference](https://diataxis.fr/reference/) in the Diátaxis framework
+### aggregate
+
+---
+
+## Query and Write Commands
+
+### delete
+
+### find
+
+### findAndModify
+
+### update
+
+---
+
+## Administration Commands
+
+### create
+
+### listCollections
+
+### listDatabases
+
