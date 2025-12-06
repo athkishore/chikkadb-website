@@ -19,11 +19,16 @@ export default defineConfig({
 					slug: 'getting-started',
 				},
 				{
+					label: 'Compatibility with Mongodb',
+					slug: 'mongodb-compatibility',
+				},
+				{
 					label: 'Reference',
 					autogenerate: { directory: 'reference' },
 				},
 			],
-			plugins: [starlightBlog()]
+			plugins: [starlightBlog()],
+			favicon: '/bitmap.png',
 		}),
 	],
 });
