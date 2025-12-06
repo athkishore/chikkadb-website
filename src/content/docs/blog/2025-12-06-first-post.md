@@ -1,8 +1,0 @@
----
-title: My first blog post
-date: 2025-12-06
----
-
-## Hello
-
-Hello World!
