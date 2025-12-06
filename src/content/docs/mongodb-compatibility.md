@@ -9,8 +9,8 @@ power of SQLite's JSON functions. The author recognizes that 100% compatibility 
 but also probably not required. 
 
 The goal is to have enough commands to cover most use cases, while ensuring that those
-behave the same way as in MongoDB. Rather than completeness in compatibility, the goal is to
-recreate the same delightful experience in working with JSON data that MongoDB made possible.
+behave the same way as in MongoDB. Rather than completeness in compatibility, the focus is on
+recreating the same delightful experience in working with JSON data that MongoDB made possible.
 
 See the [Database Commands](/reference/database-commands) reference page for more details.
 
