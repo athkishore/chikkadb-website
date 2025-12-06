@@ -4,13 +4,13 @@ description: Compatibility of ChikkaDB with MongoDB
 ---
 
 ## Database Commands and Operators
-ChikkaDB implements a rich subset of the MongoDB query language to unlock the
+ChikkaDB implements a subset of the MongoDB query language that is sufficiently rich to unlock the
 power of SQLite's JSON functions. The author recognizes that 100% compatibility is impossible, 
 but also probably not required. 
 
-The focus is on implementing enough commands to cover most use cases, while ensuring that those
+The goal is to have enough commands to cover most use cases, while ensuring that those
 behave the same way as in MongoDB. Rather than completeness in compatibility, the goal is to
-recreate the same delightful experience in working with JSON data that MongoDB gifted us.
+recreate the same delightful experience in working with JSON data that MongoDB made possible.
 
 See the [Database Commands](/reference/commands) reference page for more details.
 
