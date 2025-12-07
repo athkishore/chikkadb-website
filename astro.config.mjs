@@ -24,11 +24,38 @@ export default defineConfig({
 				},
 				{
 					label: 'Reference',
-					autogenerate: { directory: 'reference' },
+					items: [
+						{
+							label: 'Supported Features',
+							slug: 'reference/supported-features',
+							
+						},
+						{
+							label: 'Database Commands',
+							autogenerate: {
+								directory: 'reference/database-commands',
+							},
+							collapsed: true,
+						},
+						{
+							label: 'Client Methods',
+							autogenerate: {
+								directory: 'reference/client-methods',
+							},
+							collapsed: true
+						},
+						{
+							label: 'Data Types',
+							slug: 'reference/data-types',
+						},
+					]
 				},
 			],
 			plugins: [starlightBlog()],
 			favicon: '/bitmap.png',
+			tableOfContents: {
+				maxHeadingLevel: 4,
+			}
 		}),
 	],
 });
