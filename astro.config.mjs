@@ -26,6 +26,10 @@ export default defineConfig({
 					label: 'Reference',
 					items: [
 						{
+							label: 'Server Options',
+							slug: 'reference/server-options',
+						},
+						{
 							label: 'Supported Features',
 							slug: 'reference/supported-features',
 							
