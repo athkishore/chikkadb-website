@@ -16,9 +16,9 @@ See the [Database Commands](/reference/database-commands) reference page for mor
 
 ## BSON Data Compatibility
 ChikkaDB stores data in SQLite as text JSON, or in SQLite's internal JSONB format, so certain
-types in BSON cannot be represented natively. To overcome this limitation, ChikkaDB ensures that 
-unsupported BSON types are correctly handled by storing the [Extended JSON representation](https://www.mongodb.com/docs/manual/reference/mongodb-extended-json/) of 
-those values.
+types in BSON cannot be represented natively. To overcome this limitation, ChikkaDB stores 
+the [Extended JSON representation](https://www.mongodb.com/docs/manual/reference/mongodb-extended-json/) of 
+these unsupported BSON types.
 
 You can rest assured that your BSON data is accurately and losslessly stored in ChikkaDB.
 
