@@ -30,16 +30,9 @@ export default defineConfig({
 							slug: 'reference/server-options',
 						},
 						{
-							label: 'Supported Features',
-							slug: 'reference/supported-features',
-							
-						},
-						{
 							label: 'Database Commands',
-							autogenerate: {
-								directory: 'reference/database-commands',
-							},
-							collapsed: true,
+							slug: 'reference/database-commands',
+							
 						},
 						{
 							label: 'Client Methods',
@@ -58,7 +51,7 @@ export default defineConfig({
 			plugins: [starlightBlog()],
 			favicon: '/bitmap.png',
 			tableOfContents: {
-				maxHeadingLevel: 4,
+				// maxHeadingLevel: 4,
 			}
 		}),
 	],
