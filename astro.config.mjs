@@ -36,10 +36,19 @@ export default defineConfig({
 						},
 						{
 							label: 'Client Methods',
-							autogenerate: {
-								directory: 'reference/client-methods',
-							},
-							collapsed: true
+							slug: 'reference/client-methods',
+						},
+						{
+							label: 'Query Components',
+							slug: 'reference/query-components',
+						},
+						{
+							label: 'Aggregation Stages',
+							slug: 'reference/aggregation-stages',
+						},
+						{
+							label: 'Operators and Expressions',
+							slug: 'reference/operators-and-expressions',
 						},
 						{
 							label: 'Data Types',
@@ -51,7 +60,7 @@ export default defineConfig({
 			plugins: [starlightBlog()],
 			favicon: '/bitmap.png',
 			tableOfContents: {
-				// maxHeadingLevel: 4,
+				maxHeadingLevel: 4,
 			}
 		}),
 	],
